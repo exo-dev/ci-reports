@@ -31,6 +31,9 @@
                             <li>
                                 <a id="plato" onClick="changeIframe('plato')" href="javascript:void(0)">Plato</a>
                             </li>
+                            <li>
+                                <a id="eslint" onClick="changeIframe('eslint')" href="javascript:void(0)">Lint</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -46,6 +49,7 @@
                     test: 'mochawesome-reports/mochawesome.html',
                     coverage: 'istanbul/index.html',
                     plato: 'plato/index.html'
+                    eslint: 'eslint/index.html'
                 };
 
                 $('iframe').attr('src', uris[reportType]);
