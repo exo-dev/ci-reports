@@ -23,16 +23,19 @@
                     <div class="navbar-collapse collapse navbar-responsive-collapse">
                         <ul id="reports" class="nav navbar-nav">
                             <li>
-                                <a id="test" onClick="changeIframe('karma')" href="javascript:void(0)">Unit test</a>
+                                <a id="karma" onClick="changeIframe('karma')" href="javascript:void(0)">Unit test</a>
                             </li>
                             <li>
                                 <a id="coverage" onClick="changeIframe('coverage')" href="javascript:void(0)">Coverage</a>
                             </li>
                             <li>
-                                <a id="plato" onClick="changeIframe('protractor')" href="javascript:void(0)">E2E</a>
+                                <a id="protractor" onClick="changeIframe('protractor')" href="javascript:void(0)">E2E</a>
                             </li>
                             <li>
-                                <a id="eslint" onClick="changeIframe('lint')" href="javascript:void(0)">Lint</a>
+                                <a id="lint" onClick="changeIframe('lint')" href="javascript:void(0)">Lint</a>
+                            </li>
+                            <li>
+                                <a id="scss-lint" onClick="changeIframe('scss-lint')" href="javascript:void(0)">Scss Lint</a>
                             </li>
                         </ul>
                     </div>
@@ -49,7 +52,8 @@
                     karma: 'karma/index.html',
                     coverage: 'coverage/index.html',
                     protractor: 'protractor/e2e-report.html',
-                    lint: 'lint/lint.html'
+                    lint: 'lint/lint.html',
+                    scss-lint: 'scss-lint/index.html'
                 };
 
                 $('iframe').attr('src', uris[reportType]);
