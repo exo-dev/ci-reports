@@ -35,13 +35,13 @@
                                 <a id="lint" onClick="changeIframe('lint')" href="javascript:void(0)">Lint</a>
                             </li>
                             <li>
-                                <a id="scss-lint" onClick="changeIframe('scss-lint')" href="javascript:void(0)">Scss Lint</a>
+                                <a id="scss" onClick="changeIframe('scss')" href="javascript:void(0)">Scss Lint</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <iframe class="col-lg-12 col-md-12 col-sm-12" frameborder="0" style="width: 100%; height: 80%; position: absolute" src="mochawesome-reports/mochawesome.html"></iframe>
+            <iframe class="col-lg-12 col-md-12 col-sm-12" frameborder="0" style="width: 100%; height: 80%; position: absolute" src="karma/index.html"></iframe>
         </div>
         <script>
             $(document).ready(function () {
@@ -53,7 +53,7 @@
                     coverage: 'coverage/index.html',
                     protractor: 'protractor/e2e-report.html',
                     lint: 'lint/lint.html',
-                    scss-lint: 'scss-lint/index.html'
+                    scss: 'scss-lint/index.html'
                 };
 
                 $('iframe').attr('src', uris[reportType]);
